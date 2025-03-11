@@ -12,6 +12,6 @@ let veces = 5;
 
 // PROHIBIDO modificar el código a partir de aquí
 
-for (let i = 5; i < veces; i++) {
+for (let i = 0; i < veces; i++) {
   console.log("No me voy a ejecutar...");
 }

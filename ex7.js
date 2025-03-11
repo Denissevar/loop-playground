@@ -2,7 +2,7 @@
  * Ejercicio: ¿Mostrar números pares o impares?
  *
  * La operación número % 2; nos indica si un número no
- * tiene residuo cuando se devide por 2. Nos permite saber si un número es par o impar. Ejemplo 8 % 2 = 0. Como el residuo es 0; podemos decir que 8 es un número par.
+ * tiene residuo cuando se divide por 2. Nos permite saber si un número es par o impar. Ejemplo 8 % 2 = 0. Como el residuo es 0; podemos decir que 8 es un número par.
  *
  * Completa el script. Muestra por el terminal si en la iteración actual del bucle 'i' es un número par o impar.
  *
@@ -22,12 +22,17 @@ let ultimoNumeroComprobar = 10;
 let esNumeroPar;
 
 for (let i = 0; i < ultimoNumeroComprobar; i++) {
-  esNumeroPar = i % 2;
+  esNumeroPar = i % 2 == 0;
   console.log(`El número ${i} es par o impar? ${esNumeroPar}`);
 
   // Modificar a partir de aquí
+ if (esNumeroPar ==0){
+  console.log(`El número ${i} es par!`);
 }
-
+else {
+  console.log(`El número ${i} es impar!`);
+  }
+}
 /**
  * Resultado esperado: https://oscarm.tinytake.com/msc/ODc4MzY0N18yMjIwMzg4Mg
  */
